@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Profile</title>
+		<meta charset="utf-8" />
+		<link
+			href="https://fonts.googleapis.com/css?family=PT Serif:400,700|Roboto:300,400,500,700,900"
+			rel="stylesheet"
+		/>
+		<link href="./style.css" rel="stylesheet" />
+		<script
+			src="https://kit.fontawesome.com/497e78de78.js"
+			crossorigin="anonymous"
+		></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="card-white" id="intro-card">
+				<h1>Hello, I'm <b>Hugo</b> 👋</h1>
+				<img
+					src="./images/profile.jpg"
+					class="img-circle"
+					width="100"
+					alt="Me"
+				/>
+				<p>
+					My name is Hugo and I'm a french student at ESSEC! Welcome
+					on my first ever website.
+				</p>
+				<a
+					href="#contact-card"
+					class="btn-blue"
+					onclick="document.getElementById('contact-card').classList.add('card-rotate')"
+					>Contact me 📧</a
+				>
+			</div>
+			<div class="card-white" id="sport-card">
+				<h2>⚽ Football</h2>
+				<p>
+					I have been playing this sport since childhood. It is one of
+					my favorite sports.
+				</p>
+			</div>
+			<div class="card-white" id="sportcar-card">
+				<h2>🚗 Sport cars</h2>
+				<p>
+					I am fascinated about race cars such as
+					<b>Formula 1s</b> and <b>NASCARs</b> and I watch every year
+					race car tournaments like <b>Monaco Grand Prix</b> and
+					<b>24 Hours of Le Mans</b>. I'm also interested in car
+					mechanics and motors.
+				</p>
+			</div>
+			<div class="card-white" id="compscience-card">
+				<h2>💻 Computer science</h2>
+				<p>
+					I love everything related to computer and programming. I
+					have successfuly followed this course and made my first
+					website. I'm really happy to see how it turned out.
+				</p>
+			</div>
+			<div class="card-white" id="contact-card">
+				<h2>Get in reach with me</h2>
+				<ul class="list-inline">
+					<li>
+						<a href="https://github.com/user" target="_blank">
+							<i class="fa-brands fa-github"></i>
+							<script>
+								const githubButton =
+									document.querySelector(
+										".fa-github"
+									);
+
+								githubButton.addEventListener(
+									"mouseenter",
+									() => {
+										githubButton.classList.add(
+											"fa-bounce"
+										);
+									}
+								);
+
+								githubButton.addEventListener(
+									"mouseleave",
+									() => {
+										githubButton.classList.remove(
+											"fa-bounce"
+										);
+									}
+								);
+							</script>
+						</a>
+					</li>
+					<li>
+						<a href="discord.html" target="_blank">
+							<i class="fa-brands fa-discord"></i>
+							<script>
+								const twitterButton =
+									document.querySelector(
+										".fa-discord"
+									);
+
+								twitterButton.addEventListener(
+									"mouseenter",
+									() => {
+										twitterButton.classList.add(
+											"fa-flip"
+										);
+									}
+								);
+
+								twitterButton.addEventListener(
+									"mouseleave",
+									() => {
+										twitterButton.classList.remove(
+											"fa-flip"
+										);
+									}
+								);
+							</script>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

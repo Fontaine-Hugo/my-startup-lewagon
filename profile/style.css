@@ -1,0 +1,171 @@
+body {
+	background: #f7f9fc;
+	color: #575f7d;
+	font-family: "PT Serif", serif;
+	font-size: 17px;
+	font-weight: lighter;
+}
+
+* {
+	transition: 0.2s ease-in-out;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Roboto", sans-serif;
+}
+
+h1 {
+	color: #363a49;
+	font-size: 35px;
+	font-weight: bolder;
+}
+
+h2 {
+	color: #7ece90;
+	font-size: 26px;
+	font-weight: lighter;
+	font-weight: 500;
+}
+
+a {
+	font-family: "Roboto", sans-serif;
+	text-decoration: none;
+	color: #6b72e1;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+a:hover {
+	color: black;
+}
+
+.container {
+	width: 700px;
+	margin: 40px auto;
+}
+
+.card-white {
+	background-color: white;
+	padding: 30px 40px;
+	margin-bottom: 20px;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	text-align: center;
+}
+
+.card-rotate {
+	animation: 0.4s ease-in-out 0s 2 alternate focus;
+}
+
+.img-circle {
+	border-radius: 50%;
+	min-width: 100px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	-moz-user-drag: none;
+	-webkit-user-drag: none;
+}
+
+.btn-blue {
+	background-color: #6b72e1;
+	color: white;
+	padding: 15px 20px;
+	border-radius: 4px;
+	display: inline-block;
+}
+
+@media (max-width: 500px) {
+	h1 {
+		font-size: 40px;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	p {
+		font-size: 25px;
+	}
+
+	.card-white {
+		text-align: left;
+	}
+
+	.btn-blue {
+		padding: 25px 35px;
+		font-size: 30px;
+	}
+}
+
+.btn-blue:hover {
+	background-color: black;
+	color: white;
+	-moz-transform: scale(1.1) rotate(4deg);
+	-webkit-transform: scale(1.1) rotate(4deg);
+	transform: scale(1.1) rotate(4deg);
+}
+
+.btn-blue::selection {
+	color: white;
+}
+
+.list-inline {
+	margin: 0;
+	padding: 0;
+}
+
+.list-inline li {
+	display: inline;
+}
+
+.list-inline i {
+	font-size: 50px;
+	color: rgba(230, 230, 230);
+	margin: 0 10px;
+}
+
+.fa-github:hover {
+	color: black;
+}
+
+.fa-discord:hover {
+	color: #5865f2;
+}
+
+#intro-card p {
+	margin-bottom: 25px;
+}
+
+#sport-card {
+	background-color: #a9e3a9;
+}
+
+#sport-card p,
+#sport-card h2,
+#compscience-card p,
+#compscience-card h2 {
+	color: white;
+	font-weight: bold;
+}
+
+#compscience-card {
+	background-color: #ffa149;
+}
+
+h1 b {
+	background-color: rgba(255, 0, 0, 0.1);
+	color: rgba(215, 0, 0, 1);
+	padding: 0 5px;
+}
+
+@keyframes focus {
+	from {
+		transform: none;
+	}
+	to {
+		transform: rotate3d(0, 1, 0, 180deg);
+	}
+}

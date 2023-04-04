@@ -1,0 +1,41 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+/* Importing all component files */
+@import url("components/container.css");
+@import url("components/button.css");
+@import url("components/banner.css");
+@import url("components/avatar.css");
+@import url("components/footer.css");
+@import url("components/card.css");
+
+/* General rules */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Kanit", sans-serif;
+	font-size: 20px;
+	background-color: rgb(240, 240, 240);
+}
+
+.underlined {
+	text-decoration: underline;
+}
+
+.text-centered {
+	text-align: center;
+}
+
+.margin-top {
+	margin-top: 50px;
+}
+
+.footer {
+	background-color: rgb(230, 230, 230);
+	height: 50px;
+	margin-top: 80px;
+}

@@ -1,0 +1,31 @@
+.card-profile {
+	margin-top: 35px;
+	background-color: white;
+	padding: 30px 40px;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	font-size: 20px;
+}
+
+.card-worker {
+	justify-content: flex-start;
+	font-size: 1.5rem;
+	font-weight: 800;
+}
+
+.card-profile p {
+	margin-left: 20px;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-column {
+	flex-direction: column;
+}
